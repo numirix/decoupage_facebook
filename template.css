@@ -1,0 +1,149 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	position: relative;
+}
+
+html, body {
+	background-color: #E8EAED;
+}
+
+span {
+	display: inline-block;
+}
+
+nav {
+	width: 100%;
+	background-color: #4F58AF;
+	height: 50px;
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+}
+
+
+section#content {
+	width: 77%;
+	display: flex;
+	margin-top: 90px;
+	left: 50px;
+	justify-content: space-between;
+}
+
+.leftcontent , .post_sys , .article_item ,  .suggestion_item {
+	background-color: #ffffff;
+	box-shadow: 0 0 1px rgba(0,0,0,.2);
+}
+
+
+.post_sys , .article_item {
+	width: 100%;
+}
+
+.post_sys {
+	height: 150px;
+}
+
+.article_item {
+	height: 350px;
+}
+
+aside.leftcontent , section.suggestion_item {
+	border-radius:4px;
+}
+
+aside.leftcontent {
+	height: 400px;
+	width: 20%;
+}
+
+section.centercontent {
+	width: 50%;
+}
+
+section.centercontent > * {
+	margin-bottom: 10px;
+}
+
+section.suggestion_section {
+	width: 28%;
+}
+
+section.suggestion_item {
+	height: 320px;
+	margin-bottom: 15px;
+}
+
+/* conteneur des jeux et des contacts */
+aside.rightcontent {
+	position: fixed;
+	top: 50px;
+	bottom: 0;
+	height: auto;
+	right: 0;
+	padding: 15px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 210px;
+	border-left: 1px solid rgba(0,0,0,.2);
+}
+
+
+section.play {
+	display: flex;
+	padding: 15px 0;
+	margin-bottom: 70px;
+	justify-content: space-around;
+	border-bottom: .5px solid rgba(0,0,0,.1);
+}
+
+div.arrows {
+	position: absolute;
+	top: 33%;
+	width: 100%;
+}
+
+
+div.arrows i {
+	position: absolute;
+	opacity: .5;
+}
+
+i.left_arrow {
+	left: -20px;
+}
+
+i.right_arrow {
+	right: -20px;
+}
+
+span.item_play {
+	width: 50px;
+	height: 50px;
+	background-color: #ffffff;
+	border-radius: 100%;
+}
+
+
+/* conteneur des contacts */
+div.item_friend {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+span.photo_friend {
+	height: 40px;
+	width: 40px;
+	border-radius: 100%;
+	background-color: #ffffff;
+}
+
+span.infos_friend {
+	width: 115px;
+	height: 10px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	top: 11px;
+}
